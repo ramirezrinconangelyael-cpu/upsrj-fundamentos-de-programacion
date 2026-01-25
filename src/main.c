@@ -1,29 +1,37 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-int main()
-{
-    double side;
-    double area, volume; 
+int is_even(int n){
 
-    printf("Enter the side length: ");
-    scanf("%lf", &side);
+    if (n % 2 == 0)
+    {
 
-    if(side < 0){
+    return 1;
+}
 
-        printf("Error: the side length must be a postivie number.\n");
+    else 
+    {
+        return 0;
+    }
+    
+}
+int main(){
 
-        return 1; 
+int number; 
 
+    printf("Enter a number: "); 
+    scanf("%d", &number); 
+ 
+    if(is_even(number) == 1){
+        printf("El número es par\n");
+    }
+    else{
+        printf("El número es impar\n");
     }
 
-    area = side * side; 
-    volume = side * side * side;
 
-    printf("Square area: %.2f\n", area); 
-    printf("Cube area: %.2f\n", volume);
 
     return 0; 
-    
+
 }
 
 
