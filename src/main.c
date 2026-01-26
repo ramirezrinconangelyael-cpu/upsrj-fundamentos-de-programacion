@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 
 int is_even(int n){
 
@@ -22,10 +22,10 @@ int number;
     scanf("%d", &number); 
  
     if(is_even(number) == 1){
-        printf("El número es par\n");
+        printf("El numero es par\n");
     }
     else{
-        printf("El número es impar\n");
+        printf("El numero es impar\n");
     }
 
 
